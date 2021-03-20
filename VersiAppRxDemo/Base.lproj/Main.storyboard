@@ -22,11 +22,11 @@
                                 <color key="textColor" red="0.27843137254901962" green="0.46274509803921571" blue="0.90196078431372551" alpha="0.69803921568627447" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mfo-dG-HfP">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="400" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mfo-dG-HfP">
                                 <rect key="frame" x="0.0" y="106.5" width="414" height="706.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="400" id="hFd-f4-MML">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TrendingRepoCell" rowHeight="400" id="hFd-f4-MML" customClass="TrendingRepoCell" customModule="VersiAppRxDemo" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="400"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hFd-f4-MML" id="VqI-9r-9xy">
@@ -51,11 +51,11 @@
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QgX-Uj-Zs9">
-                                                                    <rect key="frame" x="0.0" y="60.5" width="380" height="216.5"/>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QgX-Uj-Zs9">
+                                                                    <rect key="frame" x="0.0" y="60.5" width="380" height="211.5"/>
                                                                 </imageView>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="4sR-bO-nUf">
-                                                                    <rect key="frame" x="0.0" y="287" width="380" height="24"/>
+                                                                    <rect key="frame" x="0.0" y="282" width="380" height="24"/>
                                                                     <subviews>
                                                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="dJs-86-eBR">
                                                                             <rect key="frame" x="0.0" y="0.0" width="70.5" height="24"/>
@@ -142,7 +142,11 @@
                                                                     </constraints>
                                                                 </stackView>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WNc-bd-zdH" customClass="RoundedButton" customModule="VersiAppRxDemo" customModuleProvider="target">
-                                                                    <rect key="frame" x="0.0" y="321" width="380" height="35"/>
+                                                                    <rect key="frame" x="0.0" y="316" width="380" height="40"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="40" id="Qx9-SE-E5H"/>
+                                                                        <constraint firstAttribute="width" constant="150" id="TFN-Yz-gi6"/>
+                                                                    </constraints>
                                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
                                                                     <state key="normal" title="VIEW README">
                                                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -167,6 +171,16 @@
                                                 <constraint firstItem="Wcp-Zu-Rc6" firstAttribute="leading" secondItem="VqI-9r-9xy" secondAttribute="leading" constant="12" id="nXy-m0-Ps8"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="backView" destination="Wcp-Zu-Rc6" id="ctt-DH-slE"/>
+                                            <outlet property="languageLable" destination="LdM-qo-fuH" id="qSZ-G5-3yI"/>
+                                            <outlet property="numberoFContributorsLable" destination="crt-gP-HW1" id="eft-8c-lPk"/>
+                                            <outlet property="numberofForkeslable" destination="dTS-Cu-5pD" id="TzS-HF-Cw1"/>
+                                            <outlet property="repoDesriptionLable" destination="Ml0-cA-xNk" id="DPd-34-Bbd"/>
+                                            <outlet property="repoImage" destination="QgX-Uj-Zs9" id="WET-Ox-HKM"/>
+                                            <outlet property="repoNameLable" destination="MHv-xe-bZ9" id="xCD-qE-lbW"/>
+                                            <outlet property="viewReadmeBtn" destination="WNc-bd-zdH" id="PTx-Cu-lit"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -185,6 +199,9 @@
                     <tabBarItem key="tabBarItem" title="TRENDING" selectedImage="icons8-trendis-30" id="xn3-sH-7ux">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="tableView" destination="mfo-dG-HfP" id="VDo-3w-hMS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
