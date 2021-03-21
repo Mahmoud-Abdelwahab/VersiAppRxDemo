@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class TrendingRepoCell: UITableViewCell {
     @IBOutlet weak var backView: UIView!
@@ -20,13 +21,18 @@ class TrendingRepoCell: UITableViewCell {
     
     private var repoUrl: String?
     
-    func configureCell(repo: Repos){
-        repoImage.image                = repo.image
-        numberoFContributorsLable.text = String(repo.numberOfContributors)
-        languageLable.text             = repo.language
-        numberofForkeslable.text       = String(repo.numberOfForks)
-        repoNameLable.text             = repo.name
-        repoDesriptionLable.text       = repo.Description
+    func configureCell(item: Item){
+        numberoFContributorsLable.text = String(item.watchersCount ?? 0)
+        languageLable.text             = item.language
+        numberofForkeslable.text       = String(item.forksCount ?? 0)
+        repoNameLable.text             = item.name
+        repoDesriptionLable.text       = item.itemDescription
+        
+        guard  let imageUrl = item.owner?.avatarURL ,  let url = URL(string:imageUrl) else  {
+                return
+            }
+            
+        repoImage.kf.setImage(with: url)
     }
     
     override func awakeFromNib() {
@@ -36,8 +42,8 @@ class TrendingRepoCell: UITableViewCell {
     override func layoutSubviews() {
         backView.layer.cornerRadius = 16
         backView.layer.shadowColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
-        backView.layer.opacity        = 0.25
-        backView.layer.shadowRadius  = 5.0
+      //  backView.layer.opacity        = 0.25
+     //   backView.layer.shadowRadius  = 5.0
         backView.layer.shadowOffset = CGSize(width: 0, height: 0)
     }
     

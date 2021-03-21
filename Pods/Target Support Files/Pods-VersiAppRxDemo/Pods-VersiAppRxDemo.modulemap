@@ -1,0 +1,6 @@
+framework module Pods_VersiAppRxDemo {
+  umbrella header "Pods-VersiAppRxDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

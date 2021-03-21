@@ -19,6 +19,9 @@
 		A710499A260690DC0090E8C8 /* RounderTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7104999260690DC0090E8C8 /* RounderTextField.swift */; };
 		A71049A926069E420090E8C8 /* Repos.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71049A826069E420090E8C8 /* Repos.swift */; };
 		A71049AD2606A1480090E8C8 /* TrendingRepoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71049AC2606A1480090E8C8 /* TrendingRepoCell.swift */; };
+		CE4257AC26072CBF00BBE2D9 /* AppService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4257AB26072CBF00BBE2D9 /* AppService.swift */; };
+		CE7E87372607520300D37D79 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7E87362607520300D37D79 /* Constants.swift */; };
+		CE7E873F260770CD00D37D79 /* SearchRepoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7E873E260770CD00D37D79 /* SearchRepoCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,9 @@
 		A7104999260690DC0090E8C8 /* RounderTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RounderTextField.swift; sourceTree = "<group>"; };
 		A71049A826069E420090E8C8 /* Repos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repos.swift; sourceTree = "<group>"; };
 		A71049AC2606A1480090E8C8 /* TrendingRepoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingRepoCell.swift; sourceTree = "<group>"; };
+		CE4257AB26072CBF00BBE2D9 /* AppService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppService.swift; sourceTree = "<group>"; };
+		CE7E87362607520300D37D79 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CE7E873E260770CD00D37D79 /* SearchRepoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepoCell.swift; sourceTree = "<group>"; };
 		EE9DB5F8778AF2A3D170DEB4 /* Pods-VersiAppRxDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VersiAppRxDemo.debug.xcconfig"; path = "Target Support Files/Pods-VersiAppRxDemo/Pods-VersiAppRxDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -91,6 +97,8 @@
 		A7104968260666A20090E8C8 /* VersiAppRxDemo */ = {
 			isa = PBXGroup;
 			children = (
+				CE7E8735260751E900D37D79 /* Utilities */,
+				CE4257AA26072CA300BBE2D9 /* Services */,
 				A71049A726069E2F0090E8C8 /* Models */,
 				A710499426068FF60090E8C8 /* CustomViews */,
 				A710499126068C790090E8C8 /* Controllers */,
@@ -105,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				A71049AC2606A1480090E8C8 /* TrendingRepoCell.swift */,
+				CE7E873E260770CD00D37D79 /* SearchRepoCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -112,8 +121,8 @@
 		A710499126068C790090E8C8 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				A7104983260668B90090E8C8 /* SearchVC.swift */,
 				A710496D260666A20090E8C8 /* TrendingVC.swift */,
+				A7104983260668B90090E8C8 /* SearchVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -144,6 +153,22 @@
 				A71049A826069E420090E8C8 /* Repos.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		CE4257AA26072CA300BBE2D9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CE4257AB26072CBF00BBE2D9 /* AppService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CE7E8735260751E900D37D79 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				CE7E87362607520300D37D79 /* Constants.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,9 +286,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7104984260668B90090E8C8 /* SearchVC.swift in Sources */,
+				CE4257AC26072CBF00BBE2D9 /* AppService.swift in Sources */,
 				A710499A260690DC0090E8C8 /* RounderTextField.swift in Sources */,
 				A71049AD2606A1480090E8C8 /* TrendingRepoCell.swift in Sources */,
+				CE7E873F260770CD00D37D79 /* SearchRepoCell.swift in Sources */,
 				A71049962606902F0090E8C8 /* RoundedButton.swift in Sources */,
+				CE7E87372607520300D37D79 /* Constants.swift in Sources */,
 				A710496E260666A20090E8C8 /* TrendingVC.swift in Sources */,
 				A710496A260666A20090E8C8 /* AppDelegate.swift in Sources */,
 				A710496C260666A20090E8C8 /* SceneDelegate.swift in Sources */,

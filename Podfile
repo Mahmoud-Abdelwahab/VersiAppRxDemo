@@ -8,4 +8,6 @@ target 'VersiAppRxDemo' do
   # Pods for VersiAppRxDemo
    pod 'RxSwift', '~> 5'
    pod 'RxCocoa', '~> 5'
+   pod 'Moya'
+   pod 'Kingfisher'
 end
