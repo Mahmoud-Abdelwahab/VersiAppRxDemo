@@ -16,8 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trending Swift Repose" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B45-W0-PQX">
-                                <rect key="frame" x="98" y="64" width="218" height="27.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Versi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B45-W0-PQX">
+                                <rect key="frame" x="183" y="64" width="48" height="27.5"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
                                 <color key="textColor" red="0.27843137254901962" green="0.46274509803921571" blue="0.90196078431372551" alpha="0.69803921568627447" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -196,9 +196,7 @@
                             <constraint firstItem="B45-W0-PQX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qc7-f5-tdD"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="TRENDING" selectedImage="trending" id="xn3-sH-7ux">
-                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
-                    </tabBarItem>
+                    <tabBarItem key="tabBarItem" title="TRENDING" selectedImage="waveform.path.ecg" catalog="system" id="xn3-sH-7ux"/>
                     <connections>
                         <outlet property="tableView" destination="mfo-dG-HfP" id="VDo-3w-hMS"/>
                     </connections>
@@ -224,7 +222,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sWg-6y-74h">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Versi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sWg-6y-74h">
                                 <rect key="frame" x="20" y="64" width="374" height="27.5"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
                                 <color key="textColor" red="0.2784313725" green="0.46274509800000002" blue="0.90196078430000004" alpha="0.69803921570000005" colorSpace="calibratedRGB"/>
@@ -372,9 +370,7 @@
                             <constraint firstItem="3Sb-qE-l0D" firstAttribute="bottom" secondItem="rqb-A8-uF2" secondAttribute="bottom" constant="10" id="hYY-SY-2Y1"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="SEARCH" selectedImage="icons8-search-30" id="9j3-Lr-kNw">
-                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
-                    </tabBarItem>
+                    <tabBarItem key="tabBarItem" title="SEARCH" selectedImage="magnifyingglass" catalog="system" id="9j3-Lr-kNw"/>
                     <connections>
                         <outlet property="searchTF" destination="Rof-MJ-DYE" id="aiC-WB-4cz"/>
                         <outlet property="tableView" destination="rqb-A8-uF2" id="HMP-oY-ST5"/>
@@ -404,20 +400,13 @@
             <point key="canvasLocation" x="-213.04347826086959" y="93.75"/>
         </scene>
     </scenes>
-    <designables>
-        <designable name="Rof-MJ-DYE">
-            <size key="intrinsicContentSize" width="184.5" height="34"/>
-        </designable>
-        <designable name="WNc-bd-zdH">
-            <size key="intrinsicContentSize" width="132" height="35"/>
-        </designable>
-    </designables>
     <resources>
         <image name="contributers" width="24" height="24"/>
         <image name="download" width="24" height="24"/>
         <image name="icons8-search-30" width="30" height="30"/>
         <image name="lang" width="24" height="24"/>
-        <image name="trending" width="100" height="100"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <image name="waveform.path.ecg" catalog="system" width="128" height="124"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

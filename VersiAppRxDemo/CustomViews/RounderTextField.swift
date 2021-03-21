@@ -6,7 +6,6 @@
 //
 
 import UIKit
-@IBDesignable
 class RounderTextField: UITextField {
 
     override  func awakeFromNib() {

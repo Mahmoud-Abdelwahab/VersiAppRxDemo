@@ -24,7 +24,7 @@ class TrendingRepoCell: UITableViewCell {
     private var repoUrl: String?
     
     func configureCell(item: Item){
-        repoUrl = item.url
+        repoUrl = item.htmlURL
         numberoFContributorsLable.text = String(item.watchersCount ?? 0)
         languageLable.text             = item.language
         numberofForkeslable.text       = String(item.forksCount ?? 0)

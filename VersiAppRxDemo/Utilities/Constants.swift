@@ -14,3 +14,7 @@ enum MyCustomError: Error{
     case clientError
     case noInternetError
 }
+
+enum Constants{
+    static let readMeSegment = "/blob/master/README.md"
+}

@@ -143,11 +143,7 @@ struct Item: Codable {
 
 // MARK: - License
 struct License: Codable {
-    var key: Key?
-    var name: Name?
-    var spdxID: SpdxID?
-    var url: String?
-    var nodeID: NodeID?
+    var key,spdxID,name,url,nodeID: String?
 
     enum CodingKeys: String, CodingKey {
         case key, name
@@ -157,13 +153,6 @@ struct License: Codable {
     }
 }
 
-enum Key: String, Codable {
-    case apache20 = "apache-2.0"
-    case cc010 = "cc0-1.0"
-    case gpl30 = "gpl-3.0"
-    case mit = "mit"
-    case other = "other"
-}
 
 enum Name: String, Codable {
     case apacheLicense20 = "Apache License 2.0"
