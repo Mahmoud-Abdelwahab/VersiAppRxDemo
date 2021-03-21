@@ -86,7 +86,7 @@ extension TrendingVC {
         tableView.refreshControl = refreshControl
         refreshControl.tintColor = #colorLiteral(red: 0.09019608051, green: 0, blue: 0.3019607961, alpha: 1)
         
-        refreshControl.attributedTitle = NSAttributedString(string: "Fetching Hot Github Repos 🔥", attributes: [NSAttributedString.Key.foregroundColor : #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1) , NSAttributedString.Key.font: UIFont(name: "AvenirNext-DemiBold", size: 16.0)
+        refreshControl.attributedTitle = NSAttributedString(string: "Fetching Hot Github Repos 🔥", attributes: [NSAttributedString.Key.foregroundColor : #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1) , NSAttributedString.Key.font: UIFont(name: "AvenirNext-DemiBold", size: 16.0)!
         ])
         
         refreshControl.addTarget(self, action: #selector(fetchRepose), for: .valueChanged)

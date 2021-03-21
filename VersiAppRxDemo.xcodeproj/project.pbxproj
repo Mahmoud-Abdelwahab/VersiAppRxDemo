@@ -22,6 +22,7 @@
 		CE4257AC26072CBF00BBE2D9 /* AppService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4257AB26072CBF00BBE2D9 /* AppService.swift */; };
 		CE7E87372607520300D37D79 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7E87362607520300D37D79 /* Constants.swift */; };
 		CE7E873F260770CD00D37D79 /* SearchRepoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7E873E260770CD00D37D79 /* SearchRepoCell.swift */; };
+		CE7E87432607896700D37D79 /* UIViewControllerExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7E87422607896600D37D79 /* UIViewControllerExtention.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		CE4257AB26072CBF00BBE2D9 /* AppService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppService.swift; sourceTree = "<group>"; };
 		CE7E87362607520300D37D79 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		CE7E873E260770CD00D37D79 /* SearchRepoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepoCell.swift; sourceTree = "<group>"; };
+		CE7E87422607896600D37D79 /* UIViewControllerExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtention.swift; sourceTree = "<group>"; };
 		EE9DB5F8778AF2A3D170DEB4 /* Pods-VersiAppRxDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VersiAppRxDemo.debug.xcconfig"; path = "Target Support Files/Pods-VersiAppRxDemo/Pods-VersiAppRxDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -97,6 +99,7 @@
 		A7104968260666A20090E8C8 /* VersiAppRxDemo */ = {
 			isa = PBXGroup;
 			children = (
+				CE7E87412607892E00D37D79 /* Extentions */,
 				CE7E8735260751E900D37D79 /* Utilities */,
 				CE4257AA26072CA300BBE2D9 /* Services */,
 				A71049A726069E2F0090E8C8 /* Models */,
@@ -169,6 +172,14 @@
 				CE7E87362607520300D37D79 /* Constants.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		CE7E87412607892E00D37D79 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				CE7E87422607896600D37D79 /* UIViewControllerExtention.swift */,
+			);
+			path = Extentions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,6 +301,7 @@
 				A710499A260690DC0090E8C8 /* RounderTextField.swift in Sources */,
 				A71049AD2606A1480090E8C8 /* TrendingRepoCell.swift in Sources */,
 				CE7E873F260770CD00D37D79 /* SearchRepoCell.swift in Sources */,
+				CE7E87432607896700D37D79 /* UIViewControllerExtention.swift in Sources */,
 				A71049962606902F0090E8C8 /* RoundedButton.swift in Sources */,
 				CE7E87372607520300D37D79 /* Constants.swift in Sources */,
 				A710496E260666A20090E8C8 /* TrendingVC.swift in Sources */,

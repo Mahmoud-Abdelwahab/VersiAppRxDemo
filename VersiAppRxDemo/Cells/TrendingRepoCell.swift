@@ -7,6 +7,8 @@
 
 import UIKit
 import Kingfisher
+import RxSwift
+import RxCocoa
 
 class TrendingRepoCell: UITableViewCell {
     @IBOutlet weak var backView: UIView!
@@ -18,10 +20,11 @@ class TrendingRepoCell: UITableViewCell {
     @IBOutlet weak var repoDesriptionLable: UILabel!
     @IBOutlet weak var repoNameLable: UILabel!
     @IBOutlet weak var viewReadmeBtn: RoundedButton!
-    
+    let disposeBag = DisposeBag()
     private var repoUrl: String?
     
     func configureCell(item: Item){
+        repoUrl = item.url
         numberoFContributorsLable.text = String(item.watchersCount ?? 0)
         languageLable.text             = item.language
         numberofForkeslable.text       = String(item.forksCount ?? 0)
@@ -33,6 +36,13 @@ class TrendingRepoCell: UITableViewCell {
             }
             
         repoImage.kf.setImage(with: url)
+        
+        //MARK:- show safari VC
+        viewReadmeBtn.rx.tap
+            .subscribe(onNext:{[weak self] in
+                guard let self = self else{return}
+                self.window?.rootViewController?.showSafariVC(url: self.repoUrl ?? "")
+            }).disposed(by: disposeBag)
     }
     
     override func awakeFromNib() {

@@ -35,7 +35,6 @@ extension AppService : TargetType{
         
         case .getSwiftRepos, .searchForRepos(_):
             return .get
-            
         }
     }
     
